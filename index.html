@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Diplomata+SC&family=Manrope:wght@200;300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="header" id="home">
+        <div class="menu">
+            <label class="burger-toggler">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
+            <ui class="menu-list">
+                <li class="menu-item">
+                    <a class="menu-link" href="#">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#about">About</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#projects">Projects</a>
+                </li>
+                <li class="menu-item">
+                    <a class="menu-link" href="#contact">Contact</a>
+                </li>
+            </ui>
+        </div>
+        <div class="header-name">
+            <h1>Jade B. Allen</h1>
+            <h4>Front-End Web Developer</h4>
+        </div>
+        <div class="space"></div>
+    </div>
+    <div class="page2">
+        <section id="about">
+            <p>
+                I am from a Junior Web-Developer based in Houston. 
+                I have a passion to scratch my creative itch and problem solve with
+                code to create and develop captivating websites for large or small companies.
+            </p>
+            <p>
+                Explore a few of my projects where
+                I focus on the use of React, JavaScript, Angular, Typescript, etc
+            </p>    
+        </section>
+        <section id="projects">
+            <div class="project" data-name="p-1">
+                <div class="project-link">
+                    <img src="assets/imgs/snake.jpg">
+                    <h3>Snake Game</h3>
+                </div>    
+            </div>
+
+            <div class="project" data-name="p-2">
+                <div class="project-link">
+                    <img src="assets/imgs/restro.png">
+                    <h3>Restro Cafe</h3>
+                </div>
+            </div>
+
+            <div class="project" data-name="p-3">
+                <div class="project-link">
+                    <img src="assets/imgs/netflix.png">
+                    <h3>Netflix Clone</h3>
+                </div>
+            </div>
+
+            <div class="project" data-name="p-4">
+                <div class="project-link">
+                    <img src="assets/imgs/ai.png">
+                    <h3>GPT3 Ai</h3>
+                </div>
+            </div>
+        </section>
+        <div class="project-popups">
+            <div class="popup" data-target="p-1">
+                <img src="assets/imgs/snakepreview.png">
+                <img id="x" src="assets/buttons/x.png">
+                <h3>Snake Game</h3>
+                <p>
+                    Enjoy a game of snake. Collect the food
+                    as the snake with the arrow keys. This is 
+                    my first project
+                </p>
+                    <a href="https://replit.com/@JadeBAllen/Snake?v=1" target="blank"><button>Website Link</button></a>
+                    <a href="https://github.com/JadeBAllen/Snake" target="blank"><button>Github Link</button></a>
+            </div>
+
+            <div class="popup" data-target="p-2">
+                <img id="restro" src="assets/imgs/restropreview.png">
+                <img id="x" src="assets/buttons/x.png">
+                <h3>Restro Cafe</h3>
+                <p>
+                    Paruse through my small responsive
+                    cafe site with different options of
+                    feel free to read and leave a review.
+                </p>
+                <a href="https://restrocafe-sd-front.jadeballen.repl.co/?category=hot" target="blank"><button>Website Link</button></a>
+                <a href="https://github.com/JadeBAllen/restrocafe-sd-front" target="blank"><button>Github Link</button></a>
+            </div>
+
+            <div class="popup" data-target="p-3">
+                <img id="movie" src="assets/imgs/moviepreview.png">
+                <img id="x" src="assets/buttons/x.png">
+                <h3>Netflix Clone</h3>
+                <p>
+                    Browse through many of your favorite
+                    movies and tv shows. Type in a keyword
+                    and search through the different titles.
+                </p>
+                <a href="https://jadeballen.github.io/NetFlix-Clone/" target="blank"><button>Website Link</button></a>
+                <a href="https://github.com/JadeBAllen/NetFlix-Clone" target="blank"><button>Github Link</button></a>
+            </div>
+
+            <div class="popup" data-target="p-4">
+                <img id="ai" src="assets/imgs/aipreview.png">
+                <img id="x" src="assets/buttons/x.png">
+                <h3>GPT3 Ai</h3>
+                <p>
+                    Browse through the wonder of ai with
+                    this resposive React website. 
+                </p>
+                <a href="https://jadeballen.github.io/UIUX_project1/" target="blank"><button>Website Link</button></a>
+                <a href="https://github.com/JadeBAllen/UIUX_project1" target="blank"><button>Github Link</button></a>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="footer">
+            <section id="contact">
+                <hr>
+                <div class="contactMe">
+                    <h1>Contact Me</h1>
+                    <p>I am always open via email</p>
+                    <a href="mailto:jade.b.allen500945@gmail.com" id="email">jade.b.allen500945@gmail.com</a>
+                    <div class="contactMe-links">
+                        <a href="https://github.com/JadeBAllen?tab=repositories" target="blank" id="link"><img src="assets/buttons/github.svg"></a>
+                        <a href="https://www.linkedin.com/in/jade-allen-317148258/" target="blank" id="link"><img src="assets/buttons/linkedin.svg"></a>
+                    </div>
+                </div>
+                <div class="selfie">
+                    <img src="assets/imgs/selfie.jpg">
+                    <p>
+                        “I realized that I don't have to be perfect.
+                        All I have to do is show up and enjoy the messy,
+                        imperfect, and beautiful journey of my life."
+                        —Kerry Washington”
+                    </p>
+                </div>
+            </section>
+            <div class="space" style="height: 200px;"></div>
+            <div class="copyright">
+                <p>Jade Allen Portfolio</p>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

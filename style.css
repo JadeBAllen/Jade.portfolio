@@ -1,0 +1,607 @@
+*
+    {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+        list-style: none;
+    }
+
+body
+    {
+        font-family: "Oswald", sans-serif;
+    }
+
+a
+    {
+        color: white;
+    }
+
+.header
+    {
+        background-image: url(assets/imgs/octopus.jpg);
+        background-size: cover;
+        border: solid 5px black;
+    }
+
+.menu
+    {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        height: 75px;
+        line-height: 75px;
+    }
+
+.menu-list .menu-item
+    {
+        cursor: pointer;
+        height: 100%;
+        transition: .4s;
+        padding: 0 80px;
+        padding-left: 50px;
+        text-align: center;
+        color: white;
+    }
+
+.menu-list .menu-item:hover
+    {
+        background: #2BEAF3;
+    }
+
+.menu-list .menu-link
+    {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+.header-name
+    {
+        margin-top: 259px;
+    }
+
+.header-name h1
+    {
+        color: white;
+        text-align: center;
+        font-size: 170px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+.header-name h4 
+    {
+        color: white;
+        text-align: center;
+        font-size: 64px;
+        font-weight:500;
+    }
+
+.space
+    {
+        height: 120px;
+    }
+
+.page2
+    {
+        background-image:url(assets/imgs/jelly.jpg);
+        background-size: cover;
+    }
+
+#about p
+    {
+        padding-top: 110px;
+        padding-left: 253px;
+        padding-right: 253px;
+        font-size: 40px;
+        color: white;
+        text-align: center;
+    }
+
+#projects
+    {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        gap: 2rem;
+    }
+
+.project
+    {
+        text-align: center;
+        padding: 3rem 2rem;
+    } 
+
+.project-link img 
+    {
+        width: 370px;
+        height: 253px;
+        border-radius: 15px;
+        cursor: pointer;
+        border: solid 2px white;
+    }
+
+.project-link img:hover
+    {
+        transform: scale(1.1, 1.1);
+        outline: .2rem solid #2BEAF3;
+        outline-offset: 0;
+    }
+
+.project-link h3
+    {
+        padding-top: 10px;
+        color: white;
+        font-size: 40px;
+        font-weight: 400;
+    }
+
+/* PROJECT POPUPS */
+.project-popups
+    {
+        position: fixed;
+        top: 0; left: 0;
+        min-height: 100vh;
+        width: 100%;
+        background: rgba(0, 0, 0, .8);
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+.project-popups .popup
+    {
+        display: none;
+        padding: 2rem;
+        text-align: center;
+        background: #d3f7f6;
+        position: relative;
+        margin: 2rem;
+        width: 30rem;
+        border-radius: 15px;
+        border: solid 2px #2BEAF3
+    }
+
+.project-popups .popup.active 
+    {
+        display: inline-block;
+    }
+
+.project-popups .popup img
+    {
+        display: flex;
+        height: 25rem;
+        padding: 2rem;
+        padding-top: 1rem;
+        width: 80rem;
+        margin: 2rem 0rem 0rem -41.7rem;
+    }
+
+#restro
+    {
+        display: flex;
+        height: 25rem;
+        width: 40rem;
+        margin: -1rem 0rem -3rem -1.3rem;
+    }
+
+#movie
+    {
+        display: flex;
+        height: 25rem;
+        width: 35rem;
+        margin: 2rem 0rem -3rem -4.3rem;
+    }
+
+#ai
+    {
+        display: flex;
+        height: 25rem;
+        width: 65rem;
+        margin: 2rem 0rem 0rem -5.7rem;
+    }
+
+.project-popups .popup #x
+    {
+        position: absolute;
+        top: -2rem; right: -1rem;
+        cursor: pointer;
+        height: 6rem;
+        width: 7rem;
+    }
+
+.project-popups .popup #x:hover
+    {
+        transform: scale(1.1,1.1);
+    }
+
+.project-popups .popup h3
+    {
+        font-size: 30px;
+    }
+
+.project-popups .popup p
+    {
+        font-size: 20px;
+    }
+
+.project-popups .popup button
+    {
+        margin-top: 1rem;
+        padding: 1rem;
+        gap: 4rem;
+        font-size: 1.1rem;
+        font-family: "oswald", san-serif;
+        border-radius: 5px;
+        background-color: white;
+        font-weight:bolder;
+        cursor: pointer;
+    }
+
+.project-popups .popup button:hover
+    {
+        transform: scale(1.04, 1.04);
+        background-color: #2BEAF3;
+    }
+
+/* Footer */
+
+.footer hr
+    {
+        width: 95%;
+        text-align: center;
+        margin-left: 58px;
+        height: 2px;
+        border-width: 1;
+        border-color: #2BEAF3;
+    }
+
+#contact
+    {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+.contactMe
+    {
+        align-items: left;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding-left: 3rem;
+        flex: 1;
+    }
+
+.contactMe h1
+    {
+        color: white;
+        font-size: 128px;
+        font-family: "oswald", san-serif;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: -2rem;
+    }
+
+.contactMe p
+    {
+        color: #FFF;
+        font-size: 40px;
+        font-family: "Oswald" san-serif;
+        font-weight: 400;
+        margin-bottom: 4rem;
+        margin-left: 1rem;
+    }
+.contactMe a
+    {
+        color: #2BEAF3;
+        font-size: 40px;
+        font-family: "Oswald", san-serif;
+        font-weight: 400;
+        line-height: normal;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        
+    }
+
+.contactMe a:hover
+    {
+        color:aquamarine;
+    }
+
+.contactMe-links 
+    {
+        flex-direction: row;
+    }
+
+.contactMe-links img
+    {
+        margin-top: 2rem;
+        margin-left: 6rem;
+        height: 5rem;
+    }
+
+.contactMe-links img:hover
+    {
+        transform: scale(1.1, 1.1);
+    }
+
+.selfie
+    {
+        display: flex;
+        flex-direction: column;
+        flex: wrap;
+        justify-content: end;
+        flex: 1;
+
+    }
+
+.selfie img
+    {
+        border-radius: 50%;
+        width: 550px;
+        height: 570px;
+        border-color: black;
+        margin: 40px 0 0 100px;
+    }
+
+.selfie p
+    {
+        color: white;
+        text-align:center;
+        margin-right: 6.8rem;
+        font-size: 32px;
+    }
+
+.copyright p
+    {
+        text-align: center;
+        color: rgba(255, 255, 255, 0.43);
+        font-size: 24px;
+        font-family: Oswald;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+@media screen and (max-width:1730px)
+    {
+        .selfie
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .selfie img
+        {
+            width: 520px;
+            height: 520px;
+            align-items: center;
+        }
+
+        .selfie p
+        {
+            font-size: 28px;
+        }
+    }
+
+@media screen and (max-width:1500px) 
+    {
+        .selfie img 
+        {
+        width: 500px;
+        height: 500px;
+        }
+
+        .selfie p 
+        {
+        font-size: 20px;
+        }
+    }
+
+@media screen and (max-width:1300px) 
+    {
+        .selfie img 
+        {
+        width: 450px;
+        height: 450px;
+        }
+
+        .selfie p 
+        {
+        font-size: 20px;
+        }
+    }
+
+@media screen and (max-width: 990px)
+    {
+        .header-name h1
+        {
+            font-size: 100px;
+        }
+
+        .header-name h4
+        {
+            font-size: 48px;
+            font-weight: 200px;
+        }
+
+        #about p
+        {
+            font-size: 24px;
+            padding-left: 200px;
+            padding-right: 200px;
+        }
+
+        #contact
+        {
+            justify-content: center;
+            align-items: center;
+        }
+
+        #contact hr
+        {
+            width: 70%;
+            margin: 2rem;
+        }
+
+        .contactMe h1
+        {
+            font-size: 100px;
+        }
+
+        .contactMe p
+        {
+            font-size: 30px;
+        }
+
+        .contactMe a
+        {
+            font-size: 30px;
+        }
+    }
+
+@media screen and (max-width: 650px) 
+{
+    .header-name h1 
+    {
+        font-size: 64px;
+    }
+
+    .header-name h4 
+    {
+        font-size: 30px;
+        font-weight: 200px;
+    }
+
+    #about p 
+    {
+        font-size: 24px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #contact 
+    {
+        flex-direction:column;
+    }
+
+    .contactMe h1 
+    {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 80px;
+    }
+
+    .contactMe p 
+    {
+        grid-template-columns: repeat(1, 1fr);
+        font-size: 28px;
+    }
+
+    .contactMe a 
+    {
+        font-size: 28px;
+    }
+
+    .selfie img 
+    {
+        width: 390px;
+        height: 390px;
+    }
+
+    .selfie p 
+    {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) 
+{
+    .header-name h1 
+    {
+        font-size: 48px;
+    }
+
+    .header-name h4 
+    {
+        font-size: 20px;
+        font-weight: 200px;
+    }
+
+    #about p 
+    {
+        font-size: 16px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    #projects 
+    {
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%
+    }
+
+    .project-link img
+    {
+        width: 280px;
+        height: 250px;
+    }
+
+    #contact 
+    {
+        flex-direction: column;
+    }
+
+    .contactMe h1 
+    {
+        font-size: 64px;
+        margin: 0 0 3rem;
+    }
+
+    .contactMe p 
+    {
+        font-size: 28px;
+        margin: 0 0 3rem;
+    }
+
+    .contactMe a 
+    {
+        font-size: 20px;
+        margin: 0 0 3rem;
+    }
+
+    .contactMe-links
+    {
+        flex-direction: row;
+    }
+
+    .selfie
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        margin-left: 3rem;
+    }
+
+    .selfie img 
+    {
+        width: 275px;
+        height: 275px;
+        margin: 0 0 1rem;
+        margin-left: -5rem;
+    }
+    
+    .selfie p 
+    {
+        font-size: 14px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 390px)
+    {
+        #projects 
+        {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
